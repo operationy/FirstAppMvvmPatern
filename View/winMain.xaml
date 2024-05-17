@@ -5,10 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstAppMvvmPatern.View"
         mc:Ignorable="d"
-        Title="Mvvm App" 
+        Title="Приложение по патерну mvvm" 
         MinHeight="450" 
         MinWidth="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
 
+        <TabControl
+            Grid.Row="0">
+            <TabItem
+                Name="UsersTab">
+                <TabItem.Header>
+                    <TextBlock Text="Staff"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"/>
+                            <GridViewColumn Header="SurName"/>
+                            <GridViewColumn Header="Phone"/>
+                            <GridViewColumn Header="Salary"/>
+                            <GridViewColumn Header="Position"/>
+                            <GridViewColumn Header="Department"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem
+                Name="PositionsTab">
+                <TabItem.Header>
+                    <TextBlock Text="Positions"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"/>
+                            <GridViewColumn Header="Salary"/>
+                            <GridViewColumn Header="Count of staffs"/>
+                            <GridViewColumn Header="Max number"/>
+                            <GridViewColumn Header="Department"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem
+                Name="DepartmentsTab">
+                <TabItem.Header>
+                    <TextBlock Text="Departments"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="SurName"/>
+                            <GridViewColumn Header="Count of positions"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

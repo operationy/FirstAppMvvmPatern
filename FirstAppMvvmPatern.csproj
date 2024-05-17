@@ -60,6 +60,24 @@
     <Compile Include="Model\Position.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="ViewModel\DataMangeVM.cs" />
+    <Compile Include="View\winAddNewDepartment.xaml.cs">
+      <DependentUpon>winAddNewDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\winAddNewPosition.xaml.cs">
+      <DependentUpon>winAddNewPosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\winAddNewUser.xaml.cs">
+      <DependentUpon>winAddNewUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\winEditDepartment.xaml.cs">
+      <DependentUpon>winEditDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\winEditPosition.xaml.cs">
+      <DependentUpon>winEditPosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\winEditUser.xaml.cs">
+      <DependentUpon>winEditUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\winMain.xaml.cs">
       <DependentUpon>winMain.xaml</DependentUpon>
     </Compile>
@@ -67,7 +85,38 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\winMessageView.xaml.cs">
+      <DependentUpon>winMessageView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\winAddNewDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winAddNewPosition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winAddNewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winEditDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winEditPosition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winEditUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\winMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\winMessageView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
